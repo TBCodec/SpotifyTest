@@ -1,17 +1,21 @@
+package base;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import pages.HomePage;
 
 public class BaseTests {
 
-    protected Homepage homePage;
     private WebDriver driver;
+    protected HomePage homePage;
 
     @BeforeEach
-    public void setUp() {
+    public void setUp(){
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
@@ -28,7 +32,7 @@ public class BaseTests {
     }
 
     @AfterEach
-    public void tearDown() {
+    public void tearDown(){
         driver.quit();
     }
 }

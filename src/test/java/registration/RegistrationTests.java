@@ -1,6 +1,6 @@
 package registration;
 
-import BaseTests;
+import base.BaseTests;
 import org.testng.annotations.Test;
 import pages.RegistrationPage;
 
