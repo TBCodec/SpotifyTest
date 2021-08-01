@@ -1,8 +1,8 @@
 package login;
 
-import base.BaseTests;
+import BaseTests;
 import org.junit.jupiter.api.RepeatedTest;
-import org.testng.annotations.Test;
+
 import static org.testng.Assert.assertEquals;
 import pages.LoginPage;
 import pages.OpenSpotifyPage;
